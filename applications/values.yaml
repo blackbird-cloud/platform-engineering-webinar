@@ -3,7 +3,7 @@ application-1:
   namespace:
     create: true
     name: application-1
-  argocdapplication:
+  argoapplication:
     create: true
     namespace: argocd
     spec:
@@ -17,7 +17,7 @@ application-2:
   namespace:
     create: true
     name: application-2
-  argocdapplication:
+  argoapplication:
     create: true
     namespace: argocd
     spec:
