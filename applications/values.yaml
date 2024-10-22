@@ -1,0 +1,27 @@
+application-1:
+  fullnameOverride: application-1
+  namespace:
+    create: true
+    name: application-1
+  argocdapplication:
+    create: true
+    namespace: argocd
+    spec:
+      source:
+        repoUrl: "https://github.com/blackbird-cloud/platform-engineering-webinar"
+        targetRevision: "main"
+        path: "./test-applications/test-application-1/deployment"
+
+application-2:
+  fullnameOverride: application-2
+  namespace:
+    create: true
+    name: application-2
+  argocdapplication:
+    create: true
+    namespace: argocd
+    spec:
+      source:
+        repoUrl: "https://github.com/blackbird-cloud/platform-engineering-webinar"
+        targetRevision: "main"
+        path: "./test-applications/test-application-2/deployment"
