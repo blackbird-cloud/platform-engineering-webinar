@@ -10,6 +10,7 @@ application-1:
       source:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
+        project: default
         path: "./test-applications/test-application-1/deployment"
 
 application-2:
@@ -24,4 +25,5 @@ application-2:
       source:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
+        project: default
         path: "./test-applications/test-application-2/deployment"
