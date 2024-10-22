@@ -8,7 +8,7 @@ application-1:
     namespace: argocd
     spec:
       source:
-        repoUrl: "https://github.com/blackbird-cloud/platform-engineering-webinar"
+        repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
         path: "./test-applications/test-application-1/deployment"
 
@@ -22,6 +22,6 @@ application-2:
     namespace: argocd
     spec:
       source:
-        repoUrl: "https://github.com/blackbird-cloud/platform-engineering-webinar"
+        repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
         path: "./test-applications/test-application-2/deployment"
