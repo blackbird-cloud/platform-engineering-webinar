@@ -27,6 +27,8 @@ dependencies:
   - name: application-bootstrap
     repo: https://blackbird-cloud.github.io/helm-charts
     alias: application-1
+    version: 0.0.3
   - name: application-bootstrap
     repo: https://blackbird-cloud.github.io/helm-charts
     alias: application-2
+    version: 0.0.3
