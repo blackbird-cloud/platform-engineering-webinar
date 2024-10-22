@@ -15,6 +15,10 @@ application-1:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
         path: "./test-applications/test-application-1/deployment"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
 
 application-2:
   fullnameOverride: application-2
@@ -33,3 +37,7 @@ application-2:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
         path: "./test-applications/test-application-2/deployment"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
