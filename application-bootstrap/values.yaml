@@ -1,8 +1,8 @@
-application-1:
-  fullnameOverride: application-1
+application-a:
+  fullnameOverride: application-a
   namespace:
     create: true
-    name: application-1
+    name: application-a
   argoapplication:
     create: true
     namespace: argocd
@@ -10,21 +10,21 @@ application-1:
       project: default
       destination:
         server: "https://kubernetes.default.svc"
-        namespace: application-1
+        namespace: application-a
       source:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
-        path: "./test-applications/test-application-1/deployment"
+        path: "./application-repositories/application-a/deployment"
       syncPolicy:
         automated:
           prune: true
           selfHeal: true
 
-application-2:
-  fullnameOverride: application-2
+application-b:
+  fullnameOverride: application-b
   namespace:
     create: true
-    name: application-2
+    name: application-b
   argoapplication:
     create: true
     namespace: argocd
@@ -32,11 +32,11 @@ application-2:
       project: default
       destination:
         server: "https://kubernetes.default.svc"
-        namespace: application-2
+        namespace: application-b
       source:
         repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
         targetRevision: "main"
-        path: "./test-applications/test-application-2/deployment"
+        path: "./application-repositories/application-b/deployment"
       syncPolicy:
         automated:
           prune: true
