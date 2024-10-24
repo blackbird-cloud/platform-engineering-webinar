@@ -41,3 +41,25 @@ application-b:
         automated:
           prune: true
           selfHeal: true
+
+application-c:
+  fullnameOverride: application-c
+  namespace:
+    create: true
+    name: application-c
+  argoapplication:
+    create: true
+    namespace: argocd
+    spec:
+      project: default
+      destination:
+        server: "https://kubernetes.default.svc"
+        namespace: application-c
+      source:
+        repoURL: "https://github.com/blackbird-cloud/platform-engineering-webinar"
+        targetRevision: "main"
+        path: "./application-repositories/application-c/deployment"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
